@@ -31,10 +31,10 @@ main {
 	text-align: center;
 }
 
-.carousel {
+/* .carousel {
 	height: 60vh;
 	width: 90vw;
-}
+} */
 
 .catergories-image {
 	width: 50%;
@@ -80,4 +80,21 @@ main {
 .text-2 {
 	margin-top: 50px;
 	margin-left: 80px;
+}
+
+.containter-1 {
+	background-color: #b7cbc0;
+	margin-top: 50px;
+	width: auto;
+}
+
+.containter-2 {
+	background-color: #b7cbc0;
+}
+
+.card-image {
+	flex-wrap: wrap-reverse;
+	flex-direction: column-reverse;
+	width: 50px;
+	height: 50px;
 }

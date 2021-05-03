@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Carousel, Col, Row, Image, Container } from 'react-bootstrap';
+import { Carousel, Col, Row, Image, Container, Card } from 'react-bootstrap';
 import Beer from '../components/Beer';
 import beers from '../beers';
 import Gin from '../components/Gin';
@@ -7,7 +7,7 @@ import gins from '../gins';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-const HomeScreen = () => {
+const HomeScreen = ({ beer }) => {
 	const [index, setIndex] = useState(0);
 
 	const handleSelect = (selectedIndex, e) => {
@@ -20,14 +20,14 @@ const HomeScreen = () => {
 		<>
 			<Carousel activeIndex={index} onSelect={handleSelect}>
 				<Carousel.Item data-aos="zoom-in">
-					<img className="carousel" src="images/skull.jpg" alt="First slide" />
+					<img className="carousel" src="" alt="First slide" />
 					<Carousel.Caption>
 						<h3>First slide label</h3>
 						<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
 					</Carousel.Caption>
 				</Carousel.Item>
 				<Carousel.Item>
-					<img className="carousel" src="images/BeaverTown.jpg" alt="Second slide" />
+					<img className="carousel" src="" alt="Second slide" />
 
 					<Carousel.Caption>
 						<h3>Second slide label</h3>
@@ -35,7 +35,7 @@ const HomeScreen = () => {
 					</Carousel.Caption>
 				</Carousel.Item>
 				<Carousel.Item>
-					<img className="carousel" src="images/wine.jpg" alt="Third slide" />
+					<img className="carousel" src="" alt="Third slide" />
 
 					<Carousel.Caption>
 						<h3>Third slide label</h3>
@@ -44,7 +44,7 @@ const HomeScreen = () => {
 				</Carousel.Item>
 			</Carousel>
 
-			<Container>
+			<Container className="containter-1">
 				<Row>
 					<Image className="skulls" src="images/skull.jpg" />
 					<div className="text">
@@ -71,19 +71,37 @@ const HomeScreen = () => {
 				</Row>
 			</Container>
 
-			<Container>
+			<Container className="containter-2">
 				<Row>
-					<div className="text-2">
-						<p> efwef wefwef ewfwef cweferg regerg rgerg rffw vervfer</p>
-						<p> efwef wefwef ewfwef cweferg regerg rgerg rffw vervfer</p>
-						<p> efwef wefwef ewfwef cweferg regerg rgerg rffw vervfer</p>
-						<p> efwef wefwef ewfwef cweferg regerg rgerg rffw vervfer</p>
-						<p> efwef wefwef ewfwef cweferg regerg rgerg rffw vervfer</p>
-						<p> efwef wefwef ewfwef cweferg regerg rgerg rffw vervfer</p>
-						<p> efwef wefwef ewfwef cweferg regerg rgerg rffw vervfer</p>
-						<p> efwef wefwef ewfwef cweferg regerg rgerg rffw vervfer</p>
-					</div>
-					<Image className="skulls-2" src="images/skull.jpg" />
+					<Col>
+						<Card className="card my-3 p-3">
+							<a href="https://images.unsplash.com/photo-1583195502574-bc095eb3df40?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHdpbmUlMjBib3R0bGV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60">
+								<Card.Img
+									className="card-image"
+									src="https://images.unsplash.com/photo-1583195502574-bc095eb3df40?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHdpbmUlMjBib3R0bGV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+									variant="top"
+								/>
+							</a>
+						</Card>
+						<Card className="card my-3 p-3">
+							<a href="https://images.unsplash.com/photo-1583195502574-bc095eb3df40?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHdpbmUlMjBib3R0bGV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60">
+								<Card.Img
+									className="card-image"
+									src="https://images.unsplash.com/photo-1583195502574-bc095eb3df40?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHdpbmUlMjBib3R0bGV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+									variant="top"
+								/>
+							</a>
+						</Card>
+						<Card className="card my-3 p-3">
+							<a href="https://images.unsplash.com/photo-1583195502574-bc095eb3df40?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHdpbmUlMjBib3R0bGV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60">
+								<Card.Img
+									className="card-image"
+									src="https://images.unsplash.com/photo-1583195502574-bc095eb3df40?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHdpbmUlMjBib3R0bGV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+									variant="top"
+								/>
+							</a>
+						</Card>
+					</Col>
 				</Row>
 			</Container>
 
