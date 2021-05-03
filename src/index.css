@@ -1,3 +1,25 @@
 main {
 	min-height: 80vh;
 }
+
+.card {
+	border: none;
+}
+
+.beer-title {
+	text-align: center;
+}
+
+.beer-brand {
+	text-align: center;
+	color: black;
+}
+
+.beer-name {
+	text-align: center;
+	color: black;
+}
+
+.beer-price {
+	text-align: center;
+}
