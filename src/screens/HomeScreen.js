@@ -19,7 +19,7 @@ const HomeScreen = () => {
 	return (
 		<>
 			<Carousel activeIndex={index} onSelect={handleSelect}>
-				<Carousel.Item>
+				<Carousel.Item data-aos="zoom-in">
 					<img className="carousel" src="images/skull.jpg" alt="First slide" />
 					<Carousel.Caption>
 						<h3>First slide label</h3>
@@ -44,6 +44,22 @@ const HomeScreen = () => {
 				</Carousel.Item>
 			</Carousel>
 
+			<Container>
+				<Row>
+					<Image className="skulls" src="images/skull.jpg" />
+					<div className="text">
+						<p> efwef wefwef ewfwef cweferg regerg rgerg rffw vervfer</p>
+						<p> efwef wefwef ewfwef cweferg regerg rgerg rffw vervfer</p>
+						<p> efwef wefwef ewfwef cweferg regerg rgerg rffw vervfer</p>
+						<p> efwef wefwef ewfwef cweferg regerg rgerg rffw vervfer</p>
+						<p> efwef wefwef ewfwef cweferg regerg rgerg rffw vervfer</p>
+						<p> efwef wefwef ewfwef cweferg regerg rgerg rffw vervfer</p>
+						<p> efwef wefwef ewfwef cweferg regerg rgerg rffw vervfer</p>
+						<p> efwef wefwef ewfwef cweferg regerg rgerg rffw vervfer</p>
+					</div>
+				</Row>
+			</Container>
+
 			<Container data-aos="fade-up">
 				<h2 className="beer-tag">Beers</h2>
 				<Row className="cards-row">
@@ -54,20 +70,24 @@ const HomeScreen = () => {
 					))}
 				</Row>
 			</Container>
-			{/* <Container className="catergories-home">
+
+			<Container>
 				<Row>
-					<Col sm={12} md={6} lg={4} xl={3}>
-						<Image className="catergories-image" src="images/winebottle.jpg" />
-					</Col>
-					<Col sm={12} md={6} lg={4} xl={3}>
-						<Image className="catergories-image-2" src="images/winebottle.jpg" />
-					</Col>
-					<Col sm={12} md={6} lg={4} xl={3}>
-						<Image className="catergories-image-3" src="images/winebottle.jpg" />
-					</Col>
+					<div className="text-2">
+						<p> efwef wefwef ewfwef cweferg regerg rgerg rffw vervfer</p>
+						<p> efwef wefwef ewfwef cweferg regerg rgerg rffw vervfer</p>
+						<p> efwef wefwef ewfwef cweferg regerg rgerg rffw vervfer</p>
+						<p> efwef wefwef ewfwef cweferg regerg rgerg rffw vervfer</p>
+						<p> efwef wefwef ewfwef cweferg regerg rgerg rffw vervfer</p>
+						<p> efwef wefwef ewfwef cweferg regerg rgerg rffw vervfer</p>
+						<p> efwef wefwef ewfwef cweferg regerg rgerg rffw vervfer</p>
+						<p> efwef wefwef ewfwef cweferg regerg rgerg rffw vervfer</p>
+					</div>
+					<Image className="skulls-2" src="images/skull.jpg" />
 				</Row>
-			</Container> */}
-			<Container data-aos="fade-right" className="categories-gin">
+			</Container>
+
+			<Container data-aos="fade-up" className="categories-gin">
 				<h2 className="gin-tag">Gins</h2>
 				<Row className="cards-row">
 					{gins.map((gin) => (

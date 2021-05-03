@@ -36,29 +36,9 @@ main {
 	width: 90vw;
 }
 
-.catergories-home {
-	margin-right: 40%;
-	margin-bottom: 30%;
-}
-
 .catergories-image {
-	height: 100%;
+	width: 50%;
 	margin-left: 2%;
-}
-
-.catergories-image-2 {
-	height: 100%;
-	margin-left: 5%;
-}
-
-.catergories-image-3 {
-	height: 100%;
-	margin-left: 5%;
-}
-
-.catergories-image-4 {
-	height: 100%;
-	margin-left: 80%;
 }
 
 .cards-row {
@@ -76,5 +56,28 @@ main {
 }
 
 .categories-gin {
-	margin-top: 40px;
+	margin-top: 20px;
+}
+
+.text {
+	margin-top: 50px;
+	margin-left: 100px;
+}
+
+.skulls {
+	width: 50%;
+	height: 10%;
+	margin-top: 5%;
+}
+
+.skulls-2 {
+	width: 50%;
+	height: 10%;
+	margin-top: 5%;
+	margin-left: 60px;
+}
+
+.text-2 {
+	margin-top: 50px;
+	margin-left: 80px;
 }
