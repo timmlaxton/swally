@@ -46,67 +46,67 @@ const beers = [
 		countInStock: 100,
 		rating: 4.5,
 		numReviews: 22
-	},
-	{
-		_id: '5',
-		brand: 'Black Isle',
-		name: '21 Pale',
-		image: '/images/BlackIslePale.jpg',
-		description:
-			'Black Isle Brewery was established in 1998 by beer lover, David Gladiwn, with the vision of brewing world-class beer using barley and hops grown exclusively on organic farms. To this day, they use what they can from their own farms, and source from other local, organic farms. The spent grain is fed to their Hebridean sheep to create a continuous, sustainable cycle.  ',
-		price: 2.69,
-		countInStock: 100,
-		rating: 4.0,
-		numReviews: 20
-	},
-	{
-		_id: '6',
-		brand: 'Anspach & Hobday ',
-		name: 'The Porter',
-		image: '/images/Anspach.jpg',
-		description:
-			'Anspach & Hobdays flagship beer, The Porter is the beer that started the brewery on their journey. Their blend of highly kilned and roasted malts is suited perfectly to their water, producing balanced flavours of rich coffee and dark chocolate.',
-		price: 3.49,
-		countInStock: 100,
-		rating: 4.2,
-		numReviews: 30
-	},
-	{
-		_id: '7',
-		brand: 'Brixton Brewery ',
-		name: 'Electric IPA',
-		image: '/images/BrixtonElec.jpg',
-		description:
-			'Inspired by Electric Avenue, the beating heart of Brixton, this lively IPA is an assault on the senses – much like its namesake. This beer is all about the interplay between malt and hop – the perfect harmony of sweet and bitter. Electric is assertive but perfectly balanced with a solid backbone that rolls into a lingering hoppy finish.',
-		price: 2.88,
-		countInStock: 100,
-		rating: 4.6,
-		numReviews: 10
-	},
-	{
-		_id: '8',
-		brand: 'Brixton Brewey',
-		name: ' Low Voltage Session',
-		image: '/images/BrixtonIPA.jpg',
-		description:
-			'The laid-back, lower strength sibling to Brixtons flagship Electric IPA. Low Voltage may be more relaxed but it still delivers a jolt of flavour from ripe, juicy New World hops.',
-		price: 2.88,
-		countInStock: 100,
-		rating: 4.8,
-		numReviews: 30
-	},
-	{
-		_id: '9',
-		brand: 'Brixton Brewey',
-		name: ' Reliance Pale Ale',
-		image: '/images/BrixtonIPA.jpg',
-		description:
-			'Our Pale Ale raises a glass to the art deco arches of Reliance Arcade where local cobblers and tailors still practice their crafts with skill and precision. Premium English Maris Otter Barley provides the clean, crisp backdrop to bright hop flavours. Reliance proves again that if you want the real deal, you have to make it by hand.',
-		price: 2.89,
-		countInStock: 100,
-		rating: 4.4,
-		numReviews: 20
 	}
+	// {
+	// 	_id: '5',
+	// 	brand: 'Black Isle',
+	// 	name: '21 Pale',
+	// 	image: '/images/BlackIslePale.jpg',
+	// 	description:
+	// 		'Black Isle Brewery was established in 1998 by beer lover, David Gladiwn, with the vision of brewing world-class beer using barley and hops grown exclusively on organic farms. To this day, they use what they can from their own farms, and source from other local, organic farms. The spent grain is fed to their Hebridean sheep to create a continuous, sustainable cycle.  ',
+	// 	price: 2.69,
+	// 	countInStock: 100,
+	// 	rating: 4.0,
+	// 	numReviews: 20
+	// },
+	// {
+	// 	_id: '6',
+	// 	brand: 'Anspach & Hobday ',
+	// 	name: 'The Porter',
+	// 	image: '/images/Anspach.jpg',
+	// 	description:
+	// 		'Anspach & Hobdays flagship beer, The Porter is the beer that started the brewery on their journey. Their blend of highly kilned and roasted malts is suited perfectly to their water, producing balanced flavours of rich coffee and dark chocolate.',
+	// 	price: 3.49,
+	// 	countInStock: 100,
+	// 	rating: 4.2,
+	// 	numReviews: 30
+	// },
+	// {
+	// 	_id: '7',
+	// 	brand: 'Brixton Brewery ',
+	// 	name: 'Electric IPA',
+	// 	image: '/images/BrixtonElec.jpg',
+	// 	description:
+	// 		'Inspired by Electric Avenue, the beating heart of Brixton, this lively IPA is an assault on the senses – much like its namesake. This beer is all about the interplay between malt and hop – the perfect harmony of sweet and bitter. Electric is assertive but perfectly balanced with a solid backbone that rolls into a lingering hoppy finish.',
+	// 	price: 2.88,
+	// 	countInStock: 100,
+	// 	rating: 4.6,
+	// 	numReviews: 10
+	// },
+	// {
+	// 	_id: '8',
+	// 	brand: 'Brixton Brewey',
+	// 	name: ' Low Voltage Session',
+	// 	image: '/images/BrixtonIPA.jpg',
+	// 	description:
+	// 		'The laid-back, lower strength sibling to Brixtons flagship Electric IPA. Low Voltage may be more relaxed but it still delivers a jolt of flavour from ripe, juicy New World hops.',
+	// 	price: 2.88,
+	// 	countInStock: 100,
+	// 	rating: 4.8,
+	// 	numReviews: 30
+	// },
+	// {
+	// 	_id: '9',
+	// 	brand: 'Brixton Brewey',
+	// 	name: ' Reliance Pale Ale',
+	// 	image: '/images/BrixtonIPA.jpg',
+	// 	description:
+	// 		'Our Pale Ale raises a glass to the art deco arches of Reliance Arcade where local cobblers and tailors still practice their crafts with skill and precision. Premium English Maris Otter Barley provides the clean, crisp backdrop to bright hop flavours. Reliance proves again that if you want the real deal, you have to make it by hand.',
+	// 	price: 2.89,
+	// 	countInStock: 100,
+	// 	rating: 4.4,
+	// 	numReviews: 20
+	// }
 ];
 
 export default beers;

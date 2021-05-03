@@ -14,6 +14,10 @@ main {
 	text-align: center;
 	color: black;
 }
+.gin-brand {
+	text-align: center;
+	color: black;
+}
 
 .beer-name {
 	text-align: center;
@@ -22,4 +26,55 @@ main {
 
 .beer-price {
 	text-align: center;
+}
+.gin-price {
+	text-align: center;
+}
+
+.carousel {
+	height: 60vh;
+	width: 90vw;
+}
+
+.catergories-home {
+	margin-right: 40%;
+	margin-bottom: 30%;
+}
+
+.catergories-image {
+	height: 100%;
+	margin-left: 2%;
+}
+
+.catergories-image-2 {
+	height: 100%;
+	margin-left: 5%;
+}
+
+.catergories-image-3 {
+	height: 100%;
+	margin-left: 5%;
+}
+
+.catergories-image-4 {
+	height: 100%;
+	margin-left: 80%;
+}
+
+.cards-row {
+	margin-left: 20px;
+}
+
+.gin-tag {
+	text-align: center;
+	margin-top: 30px;
+}
+
+.beer-tag {
+	text-align: center;
+	margin-top: 30px;
+}
+
+.categories-gin {
+	margin-top: 40px;
 }
