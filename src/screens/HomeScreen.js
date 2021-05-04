@@ -20,14 +20,14 @@ const HomeScreen = ({ beer }) => {
 		<>
 			<Carousel activeIndex={index} onSelect={handleSelect}>
 				<Carousel.Item data-aos="zoom-in">
-					<img className="carousel" src="" alt="First slide" />
+					<img className="carousel" src="holder.js/800x400?text=Third slide&bg=20232a" alt="First slide" />
 					<Carousel.Caption>
 						<h3>First slide label</h3>
 						<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
 					</Carousel.Caption>
 				</Carousel.Item>
 				<Carousel.Item>
-					<img className="carousel" src="" alt="Second slide" />
+					<img className="carousel" src="holder.js/800x400?text=Third slide&bg=20232a" alt="Second slide" />
 
 					<Carousel.Caption>
 						<h3>Second slide label</h3>
@@ -35,7 +35,7 @@ const HomeScreen = ({ beer }) => {
 					</Carousel.Caption>
 				</Carousel.Item>
 				<Carousel.Item>
-					<img className="carousel" src="" alt="Third slide" />
+					<img className="carousel" src="holder.js/800x400?text=Third slide&bg=20232a" alt="Third slide" />
 
 					<Carousel.Caption>
 						<h3>Third slide label</h3>
@@ -73,7 +73,18 @@ const HomeScreen = ({ beer }) => {
 
 			<Container className="containter-2">
 				<Row>
-					<Col>
+					<Col className="">
+						<Card className="cardHome my-3 p-3">
+							<a href="https://images.unsplash.com/photo-1583195502574-bc095eb3df40?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHdpbmUlMjBib3R0bGV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60">
+								<Card.Img
+									className="card-image"
+									src="https://images.unsplash.com/photo-1583195502574-bc095eb3df40?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHdpbmUlMjBib3R0bGV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+									variant="top"
+								/>
+							</a>
+						</Card>
+					</Col>
+					<Col className="col-3">
 						<Card className="card my-3 p-3">
 							<a href="https://images.unsplash.com/photo-1583195502574-bc095eb3df40?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHdpbmUlMjBib3R0bGV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60">
 								<Card.Img
@@ -83,6 +94,8 @@ const HomeScreen = ({ beer }) => {
 								/>
 							</a>
 						</Card>
+					</Col>
+					<Col className="col-3">
 						<Card className="card my-3 p-3">
 							<a href="https://images.unsplash.com/photo-1583195502574-bc095eb3df40?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHdpbmUlMjBib3R0bGV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60">
 								<Card.Img
@@ -92,6 +105,8 @@ const HomeScreen = ({ beer }) => {
 								/>
 							</a>
 						</Card>
+					</Col>
+					<Col className="col-3">
 						<Card className="card my-3 p-3">
 							<a href="https://images.unsplash.com/photo-1583195502574-bc095eb3df40?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHdpbmUlMjBib3R0bGV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60">
 								<Card.Img

@@ -1,4 +1,5 @@
 import React from 'react';
+import { LinkContainer } from 'react-router-bootstrap';
 import { Nav, Navbar, Container } from 'react-bootstrap';
 
 const Header = () => {
@@ -6,20 +7,35 @@ const Header = () => {
 		<header>
 			<Navbar bg="light" expand="lg" collapseOnSelect>
 				<Container>
-					<Navbar.Brand href="/">Swally</Navbar.Brand>
+					<LinkContainer to="/">
+						<Navbar.Brand>Swally</Navbar.Brand>
+					</LinkContainer>
+
 					<Navbar.Toggle aria-controls="basic-navbar-nav" />
 					<Navbar.Collapse id="basic-navbar-nav">
 						<Nav className="mr-auto">
-							<Nav.Link href="/beers">Beers</Nav.Link>
-							<Nav.Link href="/spirits">Spirits</Nav.Link>
-							<Nav.Link href="/wines">Wines</Nav.Link>
-							<Nav.Link href="/whiskey">Whiskey</Nav.Link>
+							<LinkContainer to="/beers">
+								<Nav.Link>Beers</Nav.Link>
+							</LinkContainer>
+							<LinkContainer to="/spirits">
+								<Nav.Link>Spirits</Nav.Link>
+							</LinkContainer>
+							<LinkContainer to="/wines">
+								<Nav.Link>Wines</Nav.Link>
+							</LinkContainer>
+							<LinkContainer to="/whiskey">
+								<Nav.Link>Whiskey</Nav.Link>
+							</LinkContainer>
 						</Nav>
 						<Nav className="ml-auto">
-							<Nav.Link href="/cart">
-								<i className="fas fa-shopping-bag"></i>
-							</Nav.Link>
-							<Nav.Link href="/login">Sign In</Nav.Link>
+							<LinkContainer to="/cart">
+								<Nav.Link>
+									<i className="fas fa-shopping-bag"></i>
+								</Nav.Link>
+							</LinkContainer>
+							<LinkContainer to="/login">
+								<Nav.Link>Sign In</Nav.Link>
+							</LinkContainer>
 						</Nav>
 					</Navbar.Collapse>
 				</Container>

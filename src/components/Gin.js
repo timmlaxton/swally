@@ -1,19 +1,20 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Card } from 'react-bootstrap';
 import gins from '../gins';
 
 const Gin = ({ gin }) => {
 	return (
 		<Card className="card my-3 p-3">
-			<a href={`/beer/${gin._id}`}>
+			<Link to={`/gin/${gin._id}`}>
 				<Card.Img src={gin.image} variant="top" />
-			</a>
+			</Link>
 			<Card.Body>
-				<a href={`/gin/${gin._id}`}>
+				<Link to={`/gin/${gin._id}`}>
 					<Card.Title className="gin-brand" as="div">
 						<strong>{gin.brand}</strong>
 					</Card.Title>
-				</a>
+				</Link>
 				<Card.Text className="gin-price" as="h5">
 					£{gin.price}
 				</Card.Text>
