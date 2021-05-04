@@ -103,3 +103,49 @@ main {
 	width: 90px;
 	height: 110px;
 }
+
+.backbtn {
+	border: none;
+	background-color: white;
+	font-size: 50px;
+}
+
+.infoimage {
+	border: none;
+}
+
+.infostock {
+	border: none;
+}
+
+.infoprice {
+	color: cadetblue;
+}
+
+.infodescription {
+	border: none;
+	margin-right: 50px;
+	color: grey;
+	font-size: 15px;
+}
+
+.infostatus {
+	border: none;
+}
+
+.infoqty {
+	border: none;
+	size: 10%;
+}
+
+.infobutton {
+	border: none;
+	padding: none;
+	margin-right: 3%;
+}
+
+.formqty {
+	width: 30%;
+	padding: none;
+	margin-right: 20%;
+}
