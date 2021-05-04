@@ -1,9 +1,20 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import { Row, Col } from 'react-bootstrap';
 import Beer from '../components/Beer';
-import beers from '../beers';
 
-const BeerScreen = () => {
+const BeerScreen = ({ match }) => {
+	const [beers, setBeers] = useState([]);
+
+	useEffect(() => {
+		const fetchBeers = async () => {
+			const { data } = await axios.get('/api/beers');
+			setBeers(data);
+		};
+
+		fetchBeers();
+	}, []);
+
 	return (
 		<>
 			<h1 className="beer-title">Beers</h1>

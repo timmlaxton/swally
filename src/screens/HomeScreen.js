@@ -1,14 +1,28 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import { Carousel, Col, Row, Image, Container, Card } from 'react-bootstrap';
 import Beer from '../components/Beer';
-import beers from '../beers';
 import Gin from '../components/Gin';
-import gins from '../gins';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-const HomeScreen = ({ beer }) => {
+const HomeScreen = () => {
 	const [index, setIndex] = useState(0);
+	const [beers, setBeers] = useState([]);
+	const [gins, setGins] = useState([]);
+
+	useEffect(() => {
+		const fetchBeers = async () => {
+			const { data } = await axios.get('/api/beers');
+			setBeers(data);
+		};
+		const fetchGins = async () => {
+			const { data } = await axios.get('/api/gins');
+			setGins(data);
+		};
+		fetchGins();
+		fetchBeers();
+	}, []);
 
 	const handleSelect = (selectedIndex, e) => {
 		setIndex(selectedIndex);

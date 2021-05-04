@@ -1,11 +1,20 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import { Link } from 'react-router-dom';
 import { Row, Col, Image, ListGroup, Card, Button, Form } from 'react-bootstrap';
-import beers from '../beers';
 
 const BeerInfoScreen = ({ match }) => {
 	const [qty, setQty] = useState(1);
-	const beer = beers.find((p) => p._id === match.params.id);
+	const [beer, setBeer] = useState({});
+
+	useEffect(() => {
+		const fetchBeer = async () => {
+			const { data } = await axios.get(`/api/beers/${match.params.id}`);
+			setBeer(data);
+		};
+
+		fetchBeer();
+	}, []);
 
 	const addToCartHandler = () => {};
 

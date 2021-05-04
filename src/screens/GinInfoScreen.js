@@ -1,11 +1,20 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import { Link } from 'react-router-dom';
 import { Row, Col, Image, ListGroup, Card, Button, Form } from 'react-bootstrap';
-import gins from '../gins';
 
 const GinInfoScreen = ({ match }) => {
 	const [qty, setQty] = useState(1);
-	const gin = gins.find((p) => p._id === match.params.id);
+	const [gin, setGin] = useState({});
+
+	useEffect(() => {
+		const fetchGin = async () => {
+			const { data } = await axios.get(`/api/gins/${match.params.id}`);
+			setGin(data);
+		};
+
+		fetchGin();
+	}, []);
 
 	const addToCartHandler = () => {};
 
